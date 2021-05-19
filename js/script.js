@@ -53,10 +53,6 @@ function displayResult(argComputerMove, argPlayerMove){
     printMessage('Nieznany ruch!');
   }
 }
-  /*else {
-    printMessage('Tym razem przegrywasz :(');
-  }
-}*/
 
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -90,4 +86,4 @@ else if (playerInput == '3') {
 }*/
 printMessage('Twój ruch to: ' + playerMove);
 
-displayResult(randomNumber, playerInput);
+displayResult(computerMove, playerMove);
