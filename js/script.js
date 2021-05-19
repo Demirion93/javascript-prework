@@ -52,10 +52,11 @@ function displayResult(argComputerMove, argPlayerMove){
   else if( argComputerMove == 'nożyce' && argPlayerMove == 'nieznany ruch'){
     printMessage('Nieznany ruch!');
   }
-  else {
+}
+  /*else {
     printMessage('Tym razem przegrywasz :(');
   }
-}
+}*/
 
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -89,4 +90,4 @@ else if (playerInput == '3') {
 }*/
 printMessage('Twój ruch to: ' + playerMove);
 
-displayResult(argComputerMove, argPlayerMove);
+displayResult(randomNumber, playerInput);
