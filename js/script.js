@@ -3,10 +3,10 @@ let score=0;
 let scoreElement=document.getElementById('score')
 console.log (scoreElement)
 
-const playGame = function(playerInput){
+const playGame = (playerInput) => {
   clearMessages();
 
-  const getMoveName = function(argMoveId){
+  const getMoveName = (argMoveId) => {
     if(argMoveId == 1){
       return 'kamień';
     }
@@ -22,7 +22,7 @@ const playGame = function(playerInput){
     }
   }
 
-  const displayResult = function(argComputerMove, argPlayerMove){
+  const displayResult = (argComputerMove, argPlayerMove) => {
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
     if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
